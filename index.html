@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Channel Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <h2>🎬 Channels & Topics</h2>
+
+        <!-- Channels -->
+        <button onclick="loadChannel('UCBwmMxybNva6P_5VmxjzwqA')">
+          <!-- Change the channel ID and name here as per required -->
+          Apna College
+        </button>
+        <button onclick="loadChannel('UCeVMnSShP_Iviwkknt83cww')">
+          Code With Harry
+        </button>
+        <button onclick="loadChannel('UCNrUDptMWDUWkEGx1sHJlmQ')">
+          Grapess Solutions
+        </button>
+
+        <!-- Topics -->
+        <button onclick="loadTopic('HTML')">HTML Videos</button>
+        <button onclick="loadTopic('CSS')">CSS Videos</button>
+        <button onclick="loadTopic('JavaScript')">JavaScript Videos</button>
+        <button onclick="loadTopic('C language')">C Language Videos</button>
+        <button onclick="loadTopic('C++')">C++ Videos</button>
+        <button onclick="loadTopic('Python')">Python Videos</button>
+      </aside>
+
+      <main id="video-container"></main>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal">
+      <div class="modal-content">
+        <span id="close-btn">&times;</span>
+        <iframe
+          id="video-frame"
+          width="100%"
+          height="500"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
